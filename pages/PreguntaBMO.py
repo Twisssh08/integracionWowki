@@ -14,9 +14,9 @@ import time
 import base64
 
 # Configuración inicial
-st.set_page_config(page_title="ESCLAVO ROBOT 💬", page_icon="🤖", layout="centered")
-st.title('Generación Aumentada por Recuperación (ESCLAVO ROBOT) 💬')
-st.write("Versión de Python:", platform.python_version())
+st.set_page_config(page_title="BMO💬", page_icon="🤖", layout="centered")
+st.title('HABLA CON BMO! 💬')
+st.write("Puedes preguntarle sobre él, sobre jake o finn!", platform.python_version())
 
 # Carga de imagen
 try:
