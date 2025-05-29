@@ -28,7 +28,7 @@ except Exception as e:
 # Sidebar
 with st.sidebar:
     st.subheader("BMO hará el mejor esfuerzo para hablar contigo. ¿Qué quieres saber?")
-    st.write("Con este PDF de la memoria de BMO, él te puede responder OMG")
+    st.write("Con este PDF de la memoria de BMO, él te puede responder OMG Appy Key: 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")
 
 # Clave API
 ke = st.text_input('Ingresa tu Clave de OpenAI', type="password")
