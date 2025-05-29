@@ -39,10 +39,7 @@ if st.button('ON'):
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
     ret= client1.publish("BMO", message)
- 
-    #client1.subscribe("Sensores")
-    
-    
+   
 else:
     st.write('')
 
@@ -57,9 +54,6 @@ if st.button('OFF'):
     
 else:
     st.write('')
-
-values = st.slider('Selecciona el rango de valores',0.0, 100.0)
-st.write('Values:', values)
 
 if st.button('BAILAR'):
     act1="¡A BAILAR!"
