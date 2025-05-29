@@ -20,8 +20,6 @@ def on_message(client, userdata, message):
     message_received=str(message.payload.decode("utf-8"))
     st.write(message_received)
 
-        
-
 
 broker="broker.mqttdashboard.com"
 port=1883
@@ -30,30 +28,7 @@ client1.on_message = on_message
 
 
 
-st.title("MQTT Control")
-
-if st.button('ON'):
-    act1="ON"
-    client1= paho.Client("MateoA")                           
-    client1.on_publish = on_publish                          
-    client1.connect(broker,port)  
-    message =json.dumps({"Act1":act1})
-    ret= client1.publish("BMO", message)
-   
-else:
-    st.write('')
-
-if st.button('OFF'):
-    act1="OFF"
-    client1= paho.Client("MateoA")                           
-    client1.on_publish = on_publish                          
-    client1.connect(broker,port)  
-    message =json.dumps({"Act1":act1})
-    ret= client1.publish("BMO", message)
-  
-    
-else:
-    st.write('')
+st.title("HAZ BAILAR A BMO!")
 
 if st.button('BAILAR'):
     act1="¡A BAILAR!"
