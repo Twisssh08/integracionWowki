@@ -31,6 +31,9 @@ client1.on_message = on_message
 st.title("HAZ BAILAR A BMO!")
    
 if st.button('BAILAR'):
+    audio_file = open("AudioBMO.mp3", "rb")
+    audio_bytes = audio_file.read()
+    audio_file.close()
     st.audio(audio_bytes, format="audio/mp3")
     act1="¡A BAILAR!"
     client1= paho.Client("MateoA")                           
