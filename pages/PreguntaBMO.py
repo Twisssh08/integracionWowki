@@ -20,15 +20,15 @@ st.write("Puedes preguntarle sobre él, sobre jake o finn!", platform.python_ver
 
 # Carga de imagen
 try:
-    image = Image.open('Chat_pdf.png')
+    image = Image.open('bmo-e.jpeg')
     st.image(image, width=350)
 except Exception as e:
     st.warning(f"No se pudo cargar la imagen: {e}")
 
 # Sidebar
 with st.sidebar:
-    st.subheader("Este Robot te ayudará a estudiar tu PDF, ¡hazle todas las preguntas que quieras!")
-    st.write("Sube el PDF en la parte derecha de la página para poner a trabajar a tu nuevo esclavo.")
+    st.subheader("BMO hará el mejor esfuerzo para hablar contigo. ¿Qué quieres saber?")
+    st.write("Con este PDF de la memoria de BMO, él te puede responder OMG")
 
 # Clave API
 ke = st.text_input('Ingresa tu Clave de OpenAI', type="password")
