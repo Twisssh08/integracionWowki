@@ -61,11 +61,12 @@ else:
 values = st.slider('Selecciona el rango de valores',0.0, 100.0)
 st.write('Values:', values)
 
-if st.button('Enviar valor analógico'):
+if st.button('BAILAR'):
+    act1="¡A BAILAR!"
     client1= paho.Client("MateoA")                           
     client1.on_publish = on_publish                          
-    client1.connect(broker,port)   
-    message =json.dumps({"Analog": float(values)})
+    client1.connect(broker,port)  
+    message =json.dumps({"Act1":act1})
     ret= client1.publish("BMO", message)
     
  
